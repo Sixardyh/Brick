@@ -1,5 +1,5 @@
-# Brick
-The New Shack Secret Service Discord Bot
+# Legacy Brick
+The SSSv4stro secondary and complementary bot
 
 ### Requirements :
 
@@ -14,4 +14,4 @@ Fill the blank fields in config.ini and run `Brick.py`
 
 - Rapptz for discord.py
 
-- GriffinG1's [.bot](https://github.com/GriffinG1/.bot) and Griffin for various pieces of code
+- All the Brick contributors for the original code 
